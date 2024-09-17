@@ -1,0 +1,62 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: andie's site
+
+theme: ["PaperMod"]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Resume
+          url: https://drive.google.com/file/d/1uNyLGn_AcW5xFkrFecBqMXcm-Gt0qzWl/view?usp=sharing
+          weight: 15
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    
+params:
+  defaultTheme: auto
+  ShowShareButtons: true
+  ShowReadingTime: true
+  displayFullLangName: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+
+
+  homeInfoParams:
+    Title: "andie's site"
+    Content: hi, andie here. i yap a lot. 
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/ardentlyawesome"
+    - name: linkedin
+      url: "http://www.linkedin.com/in/aindribajpai"
